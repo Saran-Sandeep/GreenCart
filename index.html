@@ -79,7 +79,7 @@
 
           <div class="flex flex-col items-center gap-5 lg:flex-row">
             <!-- home__content -->
-            <div class="w-full space-y-5 lg:w-1/2">
+            <div class="w-full space-y-5 home__content lg:w-1/2">
               <h1>
                 <strong>Plants</strong> make a <br />
                 postivie <strong>impact</strong> on <br />
@@ -129,7 +129,7 @@
               </div>
             </div>
             <!-- home__image -->
-            <div class="relative w-full lg:w-1/2">
+            <div class="relative w-full home__image lg:w-1/2">
               <img src="/assets/img/home.png" alt="home_page_image" />
 
               <div
@@ -159,7 +159,7 @@
         >
           <!-- card 1 -->
           <div
-            class="p-5 space-y-5 duration-300 border rounded-md cursor-pointer border-card-foreground hover:shadow-2xl hover:-translate-y-1"
+            class="p-5 space-y-5 duration-300 border rounded-md cursor-pointer service__card border-card-foreground hover:shadow-2xl hover:-translate-y-1"
           >
             <div class="flex items-center gap-5">
               <i class="text-3xl ri-truck-line md:text-4xl xl:text-5xl"></i>
@@ -176,7 +176,7 @@
 
           <!-- card 2 -->
           <div
-            class="p-5 space-y-5 duration-300 border rounded-md cursor-pointer border-card-foreground hover:shadow-2xl hover:-translate-y-1"
+            class="p-5 space-y-5 duration-300 border rounded-md cursor-pointer service__card border-card-foreground hover:shadow-2xl hover:-translate-y-1"
           >
             <div class="flex items-center gap-5">
               <i
@@ -195,7 +195,7 @@
 
           <!-- card 3 -->
           <div
-            class="p-5 space-y-5 duration-300 border rounded-md cursor-pointer border-card-foreground hover:shadow-2xl hover:-translate-y-1"
+            class="p-5 space-y-5 duration-300 border rounded-md cursor-pointer service__card border-card-foreground hover:shadow-2xl hover:-translate-y-1"
           >
             <div class="flex items-center gap-5">
               <i class="text-3xl ri-plant-line md:text-4xl xl:text-5xl"></i>
@@ -212,7 +212,7 @@
 
           <!-- card 4 -->
           <div
-            class="p-5 space-y-5 duration-300 border rounded-md cursor-pointer border-card-foreground hover:shadow-2xl hover:-translate-y-1"
+            class="p-5 space-y-5 duration-300 border rounded-md cursor-pointer service__card border-card-foreground hover:shadow-2xl hover:-translate-y-1"
           >
             <div class="flex items-center gap-5">
               <i
@@ -233,7 +233,7 @@
 
       <!-- About us -->
       <section id="about" class="relative pt-20 overflow-hidden lg:pt-28">
-        <div class="absolute opacity-50 -top-8 -right-12">
+        <div class="absolute opacity-50 about__leaf -top-8 -right-12">
           <img
             src="/assets/img/leaf-3.png"
             alt="leaf_image"
@@ -241,7 +241,7 @@
           />
         </div>
         <div
-          class="flex flex-col items-center gap-3 mb-10 text-center md:mb-20"
+          class="flex flex-col items-center gap-3 mb-10 text-center about__header md:mb-20"
         >
           <h2 class="title">About Us</h2>
           <p class="max-w-2xl">Follow the instructions for more</p>
@@ -251,7 +251,7 @@
           <!-- item1 -->
           <div class="flex flex-col items-center gap-5 lg:flex-row">
             <!-- image -->
-            <div class="w-full lg:w-1/2">
+            <div class="w-full about__item__1-img lg:w-1/2">
               <img
                 src="/assets/img/plant-1.png"
                 alt="about_image"
@@ -259,7 +259,7 @@
               />
             </div>
             <!-- content -->
-            <div class="w-full lg:w-1/2">
+            <div class="w-full about__item__1-content lg:w-1/2">
               <div class="space-y-5">
                 <h3>Make your <br /><strong>organic</strong> garden</h3>
                 <p class="text-foreground font-lobster">
@@ -274,7 +274,7 @@
           <!-- item2 -->
           <div class="flex flex-col items-center gap-5 lg:flex-row-reverse">
             <!-- image -->
-            <div class="w-full lg:w-1/2">
+            <div class="w-full lg:w-1/2 about__item__2-img">
               <img
                 src="/assets/img/plant-2.png"
                 alt="about_image"
@@ -282,7 +282,7 @@
               />
             </div>
             <!-- content -->
-            <div class="w-full lg:w-1/2">
+            <div class="w-full lg:w-1/2 about__item__2-content">
               <div class="space-y-5">
                 <h3>Come with us <br /><strong>grow up</strong> your plant</h3>
                 <p class="text-foreground font-lobster">
@@ -299,7 +299,7 @@
       <!-- Popular -->
       <section id="popular" class="py-20 section bg-card-dark lg:py-28">
         <div
-          class="container flex flex-col items-center gap-3 mb-40 text-center md:mb-28"
+          class="container flex flex-col items-center gap-3 mb-40 text-center popular__header md:mb-28"
         >
           <h2 class="title">Your Choice Plant</h2>
           <p class="max-w-2xl">Follow the instructions for more</p>
@@ -421,7 +421,7 @@
         id="review"
         class="relative py-20 mb-20 overflow-hidden md:mb-28"
       >
-        <div class="absolute opacity-50 -top-8 -left-12">
+        <div class="absolute opacity-50 review__leaf -top-8 -left-12">
           <img
             src="/assets/img/leaf-4.png"
             alt="leaf_image"
@@ -430,13 +430,13 @@
         </div>
 
         <div
-          class="flex flex-col items-center gap-3 mb-10 text-center md:mb-20"
+          class="flex flex-col items-center gap-3 mb-10 text-center review__header md:mb-20"
         >
           <h2 class="title">Customer Review</h2>
           <p class="max-w-2xl">Follow the instructions for more</p>
         </div>
 
-        <div class="container">
+        <div class="container review__swiper">
           <div class="py-12 swiper">
             <ul class="mb-12 swiper-wrapper">
               <li class="swiper-slide">
@@ -550,7 +550,7 @@
       </div>
 
       <!-- social icon -->
-      <div class="container mt-16 mb-10">
+      <div class="container mt-16 mb-10 footer__social-icons">
         <div class="relative border-b border-card-foreground">
           <div
             class="absolute top-0 left-0 right-0 mx-auto transform -translate-y-1/2 max-w-36"
@@ -575,7 +575,7 @@
 
       <!-- content -->
       <div
-        class="container grid grid-cols-1 gap-8 text-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:text-start"
+        class="container grid grid-cols-1 gap-8 text-center footer__content md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:text-start"
       >
         <!-- item 1 -->
         <div>
@@ -621,14 +621,16 @@
       </div>
 
       <!-- copyright -->
-      <div class="container">
+      <div class="container footer__copyright">
         <p class="mt-10 text-center opacity-50">
           Copyright &copy; 2024 GreenCart | All Rights Reserved
         </p>
       </div>
 
       <!-- floral image -->
-      <div class="absolute bottom-0 left-0 pointer-events-none opacity-20">
+      <div
+        class="absolute bottom-0 left-0 pointer-events-none footer__floral-img opacity-20"
+      >
         <img
           src="/assets/img/floral-1.png"
           alt="floral_image"
@@ -645,7 +647,11 @@
       ><i class="ri-arrow-up-line"></i
     ></a>
 
+    <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- scroll js -->
+    <script src="/assets/js/scrollreveal.min.js"></script>
+    <!-- main js -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

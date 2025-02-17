@@ -98,3 +98,30 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+
+// Scroll reveal
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 300,
+  reset: true,
+});
+
+sr.reveal(
+  ".home__content, .about__header, .popular__header, .review__header, .review__swiper, .footer__social-icons, .footer__content, .footer__copyright"
+);
+sr.reveal(".home__image", { delay: 500, scale: 0.5 });
+
+sr.reveal(".service__card, .popular__card", { interval: 100 });
+
+sr.reveal(".about__leaf", { delay: 1000, origin: "right" });
+sr.reveal(".about__item__1-content, .about__item__2-img", {
+  origin: "right",
+});
+sr.reveal(".about__item__2-content, .about__item__1-img", { origin: "left" });
+
+sr.reveal(".review__leaf, .footer__floral-img", {
+  delay: 1000,
+  origin: "left",
+});
