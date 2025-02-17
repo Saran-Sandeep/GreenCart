@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&display=swap");
+@import "tailwindcss";
+
+/* Tailwind configurations */
+
+@theme {
+  /* fonts */
+  --font-lobster: "Lobster", serif;
+  --font-jost: "Jost", serif;
+
+  /* breakpoints */
+  --breakpoint-sm: 340px;
+  --breakpoint-md: 540px;
+  --breakpoint-lg: 768px;
+  --breakpoint-xl: 1180px;
+
+  /* colors */
+  --color-background: var(--color-green-950);
+  --color-foreground: var(--color-slate-200);
+  --color-primary: var(--color-yellow-500);
+  --color-primary-foregorund: var(--color-slate-950);
+  --color-muted-background: var(--color-green-700);
+  --color-muted-foregound: var(--color-slate-400);
+
+  /* animations */
+  --animate-moveY: move 3s linear infinite;
+  @keyframes move {
+    50% {
+      transform: translateY(-1rem);
+    }
+  }
+
+  --animate-rotate: rotate 15s linear infinite;
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  --animate-scaleUp: scaleUp 15s linear infinite;
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+  }
+}
+
+@utility container {
+  @apply p-3 lg:p-8 mx-auto;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+/* Utility classes */
+
+section {
+  @apply mt-20 lg:mt-28;
+}
+
+h1 {
+  @apply text-3xl md:text-4xl xl:text-5xl font-bold;
+}
+
+strong {
+  @apply text-primary;
+}
+
+.btn {
+  @apply text-primary-foregorund border border-primary bg-primary rounded-md px-5 py-2 transition-all duration-300;
+}
+
+.btn span {
+  @apply font-bold;
+}
+
+.btn:hover {
+  @apply opacity-90 -translate-y-1;
+}
+
+.btn_outline {
+  @apply bg-transparent text-foreground;
+}
+
+.btn_outline:hover {
+  @apply bg-primary text-primary-foregorund;
+}
+
+/* Main CSS */
+
+/* Header */
+
+.header__nav-link {
+  @apply text-foreground text-lg font-bold duration-300;
+}
+
+.header__nav-link:hover {
+  @apply text-primary;
+}
+
+/* 
+@media screen(sm) {
+} */
+
+/* @media screen(md) {
+} */
+
+/* @media screen(lg) {
+} */
+
+/* @media screen(xl) {
+} */
+
+/* @media screen(2xl) {
+} */

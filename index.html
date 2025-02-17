@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- favicon   -->
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.ico" />
+    <!-- remixicon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+      integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indore Plants</title>
+  </head>
+  <body class="bg-background text-foreground font-jost tracking-wider">
+    <header class="bg-background fixed w-full top-0 left-0 z-50">
+      <nav class="container flex items-center justify-between h-16 sm:h-20">
+        <div class="font-lobster sm:text-2xl">IndorePlants.</div>
+
+        <div
+          id="nav-menu"
+          class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-background/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto"
+        >
+          <ul class="flex flex-col gap-8 items-center lg:flex-row">
+            <li><a href="#home" class="header__nav-link">Home</a></li>
+            <li><a href="#about" class="header__nav-link">About</a></li>
+            <li><a href="#popular" class="header__nav-link">Popular</a></li>
+            <li><a href="#review" class="header__nav-link">Review</a></li>
+          </ul>
+
+          <div class="absolute bottom-0 -right-10 opacity-90 lg:hidden">
+            <img
+              src="./assets/img/leaf-1.png"
+              alt="leaf_image"
+              class="size-32"
+            />
+          </div>
+          <div class="absolute -top-5 -left-5 rotate-90 opacity-90 lg:hidden">
+            <img
+              src="./assets/img/leaf-2.png"
+              alt="leaf_image"
+              class="size-32"
+            />
+          </div>
+        </div>
+
+        <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+          <i class="ri-menu-4-line" id="menu-toggle"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home -->
+      <section id="home" class="text-foregorund section relative">
+        <div class="container">
+          <!-- blob-1 -->
+          <div
+            class="size-64 bg-muted-background rounded-full blur-3xl -z-10 opacity-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          ></div>
+          <!-- blob-2 -->
+          <div
+            class="size-64 bg-muted-background rounded-full blur-3xl -z-10 opacity-40 absolute right-0 bottom-0"
+          ></div>
+
+          <div class="flex flex-col items-center gap-5 lg:flex-row">
+            <!-- home__content -->
+            <div class="w-full space-y-5 lg:w-1/2">
+              <h1>
+                <strong>Plants</strong> make a <br />
+                postivie <strong>impact</strong> on <br />
+                your environment
+              </h1>
+
+              <p class="text-muted-foregound font-lobster">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+                temporibus quaerat veritatis eos ducimus perspiciatis molestias
+                culpa vel, quasi maxime!
+              </p>
+
+              <div
+                class="flex flex-col gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10"
+              >
+                <button class="btn">
+                  <span
+                    >Shop Now
+                    <i class="ri-leaf-line"></i>
+                  </span>
+                </button>
+                <button class="btn btn_outline">
+                  <span
+                    >Know More
+                    <i class="ri-leaf-line"></i>
+                  </span>
+                </button>
+              </div>
+
+              <p class="text-xs font-lobster text-slate-300">
+                You will get 30-days free trial.
+              </p>
+
+              <div class="flex items-center gap-5 text-lg lg:pt-10">
+                <i
+                  class="ri-facebook-fill text-muted-foregound hover:text-primary duration-300 cursor-pointer text-base"
+                ></i>
+                <i
+                  class="ri-twitter-x-line text-muted-foregound hover:text-primary duration-300 cursor-pointer text-base"
+                ></i
+                ><i
+                  class="ri-instagram-line text-muted-foregound hover:text-primary duration-300 cursor-pointer text-base"
+                ></i
+                ><i
+                  class="ri-linkedin-fill text-muted-foregound hover:text-primary duration-300 cursor-pointer text-base"
+                ></i>
+              </div>
+            </div>
+            <!-- home__image -->
+            <div class="w-full relative lg:w-1/2">
+              <img src="/assets/img/home.png" alt="home_page_image" />
+
+              <div
+                class="absolute -top-10 right-0 opacity-30 xl:top-5 animate-moveY"
+              >
+                <i class="ri-leaf-line text-6xl text-primary"></i>
+              </div>
+              <div
+                class="absolute bottom-0 left-0 opacity-30 xl:bottom-12 animate-rotate"
+              >
+                <i class="ri-flower-line text-6xl text-primary"></i>
+              </div>
+              <div
+                class="hidden absolute -top-8 -left-5 opacity-30 lg:block animate-scaleUp"
+              >
+                <i class="ri-plant-line text-6xl text-primary"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <div></div>
+
+      <!-- About us -->
+      <section id="about"></section>
+
+      <!-- Popular -->
+      <section id="popular"></section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
