@@ -12,12 +12,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Green Cart</title>
   </head>
   <body class="tracking-wider bg-background text-foreground font-jost">
     <!-- header -->
-    <header class="fixed top-0 left-0 z-50 w-full bg-background">
+    <header id="navbar" class="fixed top-0 left-0 z-50 w-full bg-background">
       <nav class="container flex items-center justify-between h-16 sm:h-20">
         <div class="font-lobster sm:text-2xl">GreenCart.</div>
 
@@ -26,7 +32,11 @@
           class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-background/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto"
         >
           <ul class="flex flex-col items-center gap-8 lg:flex-row">
-            <li><a href="#home" class="header__nav-link">Home</a></li>
+            <li>
+              <a href="#home" class="header__nav-link header__nav-link--active"
+                >Home</a
+              >
+            </li>
             <li><a href="#about" class="header__nav-link">About</a></li>
             <li><a href="#popular" class="header__nav-link">Popular</a></li>
             <li><a href="#review" class="header__nav-link">Review</a></li>
@@ -227,7 +237,7 @@
           <img
             src="/assets/img/leaf-3.png"
             alt="leaf_image"
-            class="size-40 md:w-52 xl:w-64"
+            class="size-40 md:size-52 xl:size-64"
           />
         </div>
         <div
@@ -287,9 +297,355 @@
       </section>
 
       <!-- Popular -->
-      <section id="popular"></section>
+      <section id="popular" class="py-20 section bg-card-dark lg:py-28">
+        <div
+          class="container flex flex-col items-center gap-3 mb-40 text-center md:mb-28"
+        >
+          <h2 class="title">Your Choice Plant</h2>
+          <p class="max-w-2xl">Follow the instructions for more</p>
+        </div>
+
+        <div
+          class="container grid w-full grid-cols-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        >
+          <!-- card 1 -->
+          <div
+            class="relative p-10 pt-24 rounded-md popular__card bg-background"
+          >
+            <img
+              src="assets/img/cart-1.png"
+              alt="popular_image"
+              class="absolute duration-500 transform -translate-x-1/2 -translate-y-1/2 size-56 -top-5 left-1/2"
+            />
+            <p class="italic">Nephrolepis exaltata</p>
+            <h3>Boston Fern</h3>
+
+            <div class="py-3 text-xs text-primary">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i><i class="ri-star-half-fill"> </i
+              ><i class="ri-star-line text-muted-foregound"></i
+              ><i class="ri-star-line text-muted-foregound"></i>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <p class="text-xl">$5</p>
+              <button class="px-2 py-1 text-xl rounded-sm bg-primary">
+                <i class="ri-shopping-cart-fill"></i>
+              </button>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="relative p-10 pt-24 rounded-md popular__card bg-background"
+          >
+            <img
+              src="assets/img/cart-2.png"
+              alt="popular_image"
+              class="absolute duration-500 transform -translate-x-1/2 -translate-y-1/2 size-56 -top-5 left-1/2"
+            />
+            <p class="italic">Ficus elastica</p>
+            <h3>Rubber Plant</h3>
+
+            <div class="py-3 text-xs text-primary">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i><i class="ri-star-half-fill"> </i
+              ><i class="ri-star-line text-muted-foregound"></i
+              ><i class="ri-star-line text-muted-foregound"></i>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <p class="text-xl">$6</p>
+              <button class="px-2 py-1 text-xl rounded-sm bg-primary">
+                <i class="ri-shopping-cart-fill"></i>
+              </button>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="relative p-10 pt-24 rounded-md popular__card bg-background"
+          >
+            <img
+              src="assets/img/cart-3.png"
+              alt="popular_image"
+              class="absolute duration-500 transform -translate-x-1/2 -translate-y-1/2 size-56 -top-5 left-1/2"
+            />
+            <p class="italic">Spathiaphyllum wallisii</p>
+            <h3>Peace Lily</h3>
+
+            <div class="py-3 text-xs text-primary">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i><i class="ri-star-half-fill"> </i
+              ><i class="ri-star-line text-muted-foregound"></i
+              ><i class="ri-star-line text-muted-foregound"></i>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <p class="text-xl">$5</p>
+              <button class="px-2 py-1 text-xl rounded-sm bg-primary">
+                <i class="ri-shopping-cart-fill"></i>
+              </button>
+            </div>
+          </div>
+          <!-- card 1 -->
+          <div
+            class="relative p-10 pt-24 rounded-md popular__card bg-background"
+          >
+            <img
+              src="assets/img/cart-4.png"
+              alt="popular_image"
+              class="absolute duration-500 transform -translate-x-1/2 -translate-y-1/2 size-56 -top-5 left-1/2"
+            />
+            <p class="italic">Adenium obesum</p>
+            <h3>Desert Rose</h3>
+
+            <div class="py-3 text-xs text-primary">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i><i class="ri-star-half-fill"> </i
+              ><i class="ri-star-line text-muted-foregound"></i
+              ><i class="ri-star-line text-muted-foregound"></i>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <p class="text-xl">$8</p>
+              <button class="px-2 py-1 text-xl rounded-sm bg-primary">
+                <i class="ri-shopping-cart-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- /.card1 -->
+      </section>
+
+      <!-- Customer Review -->
+      <section
+        id="review"
+        class="relative py-20 mb-20 overflow-hidden md:mb-28"
+      >
+        <div class="absolute opacity-50 -top-8 -left-12">
+          <img
+            src="/assets/img/leaf-4.png"
+            alt="leaf_image"
+            class="overflow-hidden size-40 md:size-52 xl:size-64"
+          />
+        </div>
+
+        <div
+          class="flex flex-col items-center gap-3 mb-10 text-center md:mb-20"
+        >
+          <h2 class="title">Customer Review</h2>
+          <p class="max-w-2xl">Follow the instructions for more</p>
+        </div>
+
+        <div class="container">
+          <div class="py-12 swiper">
+            <ul class="mb-12 swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 p-6 rounded-md bg-card-dark">
+                  <p class="font-lobster">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Officia fuga nobis nisi praesentium illum ullam!
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="/assets/img/review-1.jpg"
+                      alt="review_avatar"
+                      class="rounded-full size-12"
+                    />
+                    <div class="ml-12">
+                      <p class="uppercase text-primary">John doe</p>
+                      <p>Designer</p>
+                    </div>
+                    <i class="ml-auto text-4xl ri-double-quotes-r"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 p-6 rounded-md bg-card-dark">
+                  <p class="font-lobster">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Officia fuga nobis nisi praesentium illum ullam!
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="/assets/img/review-2.jpg"
+                      alt="review_avatar"
+                      class="rounded-full size-12"
+                    />
+                    <div class="ml-12">
+                      <p class="uppercase text-primary">John doe</p>
+                      <p>Designer</p>
+                    </div>
+                    <i class="ml-auto text-4xl ri-double-quotes-r"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 p-6 rounded-md bg-card-dark">
+                  <p class="font-lobster">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Officia fuga nobis nisi praesentium illum ullam!
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="/assets/img/review-3.jpg"
+                      alt="review_avatar"
+                      class="rounded-full size-12"
+                    />
+                    <div class="ml-12">
+                      <p class="uppercase text-primary">John doe</p>
+                      <p>Designer</p>
+                    </div>
+                    <i class="ml-auto text-4xl ri-double-quotes-r"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 p-6 rounded-md bg-card-dark">
+                  <p class="font-lobster">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Officia fuga nobis nisi praesentium illum ullam!
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="/assets/img/review-4.jpg"
+                      alt="review_avatar"
+                      class="rounded-full size-12"
+                    />
+                    <div class="ml-12">
+                      <p class="uppercase text-primary">John doe</p>
+                      <p>Designer</p>
+                    </div>
+                    <i class="ml-auto text-4xl ri-double-quotes-r"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <footer class="relative pt-20 pb-10 bg-card text-card-foreground md:pt-28">
+      <!-- newsletter -->
+      <div
+        class="container absolute top-0 left-0 right-0 -translate-y-1/2 text-foreground"
+      >
+        <div class="px-10 pt-5 pb-10 space-y-5 rounded-md bg-card-dark">
+          <h3><strong>Subscribe</strong> to our newsletter</h3>
+          <div class="flex flex-col gap-2 md:flex-row">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email Address"
+              class="w-full px-5 py-3 rounded-md outline-none bg-card text-card-foreground"
+            /><button
+              class="flex items-center justify-center gap-2 px-5 py-3 rounded-md bg-background hover:opacity-80 duration-399"
+            >
+              <span>Subscribe</span><i class="ri-send-plane-2-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- social icon -->
+      <div class="container mt-16 mb-10">
+        <div class="relative border-b border-card-foreground">
+          <div
+            class="absolute top-0 left-0 right-0 mx-auto transform -translate-y-1/2 max-w-36"
+          >
+            <div class="space-x-2 text-lg text-center bg-card">
+              <i
+                class="text-base duration-300 cursor-pointer hover:text-primary ri-facebook-fill"
+              ></i>
+              <i
+                class="text-base duration-300 cursor-pointer hover:text-primary ri-twitter-x-line"
+              ></i>
+              <i
+                class="text-base duration-300 cursor-pointer hover:text-primary ri-instagram-line"
+              ></i>
+              <i
+                class="text-base duration-300 cursor-pointer hover:text-primary ri-linkedin-fill"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content -->
+      <div
+        class="container grid grid-cols-1 gap-8 text-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:text-start"
+      >
+        <!-- item 1 -->
+        <div>
+          <div class="inline-block text-center text-green-700 text-7xl">
+            <i class="ri-leaf-fill"></i>
+            <p class="text-xl font-lobster sm:text-2xl">GreenCart.</p>
+          </div>
+        </div>
+
+        <!-- item 2 -->
+        <div>
+          <p class="mb-5 text-xl font-bold">Quick Link</p>
+          <div class="flex flex-col gap-1">
+            <a href="#">Plants</a>
+            <a href="#">Flowers</a>
+            <a href="#">Gardening</a><a href="">Seeds</a><a href="">Shipping</a>
+          </div>
+        </div>
+
+        <!-- item 3 -->
+        <div>
+          <p class="mb-5 text-xl font-bold">Popular Services</p>
+          <div class="flex flex-col gap-1">
+            <a href="#">Tree Planting</a>
+            <a href="#">Grass Cutting</a>
+            <a href="#">Weeds control</a>
+            <a href="#">Project</a>
+          </div>
+        </div>
+
+        <!-- item 4 -->
+        <div>
+          <p class="mb-5 text-xl font-bold">Contact Us</p>
+          <div class="flex flex-col gap-1">
+            <a href="tel:+917569287400">+91 7569287400</a>
+            <a href="mailto:saransandeepyedla03@gmail"
+              >saransandeepyedla03@gmail.com</a
+            >
+            <br />
+            <p class="text-muted-foreground">Tanuku, Andhra Pradhesh, India</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="container">
+        <p class="mt-10 text-center opacity-50">
+          Copyright &copy; 2024 GreenCart | All Rights Reserved
+        </p>
+      </div>
+
+      <!-- floral image -->
+      <div class="absolute bottom-0 left-0 pointer-events-none opacity-20">
+        <img
+          src="/assets/img/floral-1.png"
+          alt="floral_image"
+          class="w-full lg:w-1/2"
+        />
+      </div>
+    </footer>
+
+    <!-- scroll to top -->
+    <a
+      href="#"
+      class="fixed z-50 inline-block px-3 py-1 text-lg duration-300 rounded-md shadow-sm right-4 -bottom-1/2 bg-primary md:px-4 md:py-2 hover:-translate-y-1"
+      id="scroll-up"
+      ><i class="ri-arrow-up-line"></i
+    ></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
