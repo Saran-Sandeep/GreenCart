@@ -20,7 +20,7 @@
   --color-primary: var(--color-yellow-500);
   --color-primary-foregorund: var(--color-slate-950);
   --color-muted-background: var(--color-green-700);
-  --color-muted-foregound: var(--color-slate-400);
+  --color-muted-foregound: var(--color-slate-300);
   --color-card: var(--color-slate-200);
   --color-card-foreground: var(--color-green-900);
   --color-card-dark: var(--color-green-900);
@@ -156,24 +156,8 @@ body::-webkit-scrollbar-thumb {
   @apply -top-8;
 }
 
-/* review seciton */
+/* review section */
 /* swiper custom css */
 .swiper-pagination-bullet {
   @apply bg-muted-background size-3;
 }
-
-/* 
-@media screen(sm) {
-} */
-
-/* @media screen(md) {
-} */
-
-/* @media screen(lg) {
-} */
-
-/* @media screen(xl) {
-} */
-
-/* @media screen(2xl) {
-} */
